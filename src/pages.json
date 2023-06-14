@@ -1,0 +1,75 @@
+{
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"^tm-(.*)": "@/tmui/components/tm-$1/tm-$1.vue"
+		}
+	},
+	"pages": [
+		{
+			"path": "pages/home/home",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/search/search",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/community/community",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"enablePullDownRefresh": false
+			}
+		},
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "裕农通",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"navigationStyle": "custom"
+	},
+	"tabBar": {
+		"fontSize": "24rpx",
+		"color": "#9EA3AE",
+		"selectedColor": "#6A320F",
+		"list": [
+			{
+				"pagePath": "pages/home/home",
+				"text": "首页",
+				"iconPath": "static/tabBar/home_0.svg",
+				"selectedIconPath": "static/tabBar/home_1.svg"
+			},
+			{
+				"pagePath": "pages/community/community",
+				"text": "村情民意",
+				"iconPath": "static/tabBar/community_0.svg",
+				"selectedIconPath": "static/tabBar/community_0.svg"
+			},
+			{
+				"pagePath": "pages/home/home",
+				"text": "地图",
+				"iconPath": "static/tabBar/map_0.svg",
+				"selectedIconPath": "static/tabBar/map_1.svg"
+			},
+			{
+				"pagePath": "pages/home/home",
+				"text": "剧本杀专区",
+				"iconPath": "static/tabBar/jubensha_0.svg",
+				"selectedIconPath": "static/tabBar/jubensha_1.svg"
+			},
+			{
+				"pagePath": "pages/home/home",
+				"text": "个人中心",
+				"iconPath": "static/tabBar/personalCenter_0.svg",
+				"selectedIconPath": "static/tabBar/personalCenter_1.svg"
+			},
+		]
+	}
+}
