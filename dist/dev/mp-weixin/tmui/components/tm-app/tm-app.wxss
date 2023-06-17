@@ -1,0 +1,37 @@
+
+.app.data-v-690d8382 {
+
+		background-attachment: fixed;
+		background-position: 0px 0px;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+
+		flex-direction: column;
+}
+.menu.data-v-690d8382 {
+		z-index: 999;
+		transform: translateX(-101%);
+}
+.menu.data-v-690d8382 {
+		transition-duration: 0.25s;
+		transition-timing-function: ease;
+		transition-property: transform;
+		transition-delay: 0ms;
+		transform: translateX(-101%);
+		z-index: 999;
+}
+.menuOn.data-v-690d8382 {
+		transform: translateX(0%);
+}
+.body.data-v-690d8382 {
+		transition-duration: 0.25s;
+		transition-timing-function: ease;
+		transition-property: transform;
+		transition-delay: 0ms;
+		transform: translateX(0%) scale(1);
+}
+.bodyOn.data-v-690d8382 {
+		transform: translateX(70%) scale(0.8);
+}
+
+

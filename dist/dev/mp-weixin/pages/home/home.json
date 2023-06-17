@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "首页",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tm-text": "../../tmui/components/tm-text/tm-text",
+    "tm-app": "../../tmui/components/tm-app/tm-app"
+  }
+}
