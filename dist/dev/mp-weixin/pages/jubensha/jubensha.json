@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "剧本杀",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tm-app": "../../tmui/components/tm-app/tm-app"
+  }
+}

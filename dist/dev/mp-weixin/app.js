@@ -14,6 +14,9 @@ if (!Math) {
   "./pages/home/home.js";
   "./pages/search/search.js";
   "./pages/community/community.js";
+  "./pages/map/map.js";
+  "./pages/jubensha/jubensha.js";
+  "./pages/personalCenter/personalCenter.js";
 }
 const _sfc_main = {};
 function _sfc_render(_ctx, _cache) {

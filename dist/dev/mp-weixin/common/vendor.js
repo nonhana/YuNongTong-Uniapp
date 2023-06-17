@@ -343,8 +343,8 @@ const E = function() {
 };
 E.prototype = {
   on: function(name, callback, ctx) {
-    var e = this.e || (this.e = {});
-    (e[name] || (e[name] = [])).push({
+    var e2 = this.e || (this.e = {});
+    (e2[name] || (e2[name] = [])).push({
       fn: callback,
       ctx
     });
@@ -370,8 +370,8 @@ E.prototype = {
     return this;
   },
   off: function(name, callback) {
-    var e = this.e || (this.e = {});
-    var evts = e[name];
+    var e2 = this.e || (this.e = {});
+    var evts = e2[name];
     var liveEvents = [];
     if (evts && callback) {
       for (var i = 0, len = evts.length; i < len; i++) {
@@ -379,7 +379,7 @@ E.prototype = {
           liveEvents.push(evts[i]);
       }
     }
-    liveEvents.length ? e[name] = liveEvents : delete e[name];
+    liveEvents.length ? e2[name] = liveEvents : delete e2[name];
     return this;
   }
 };
@@ -554,8 +554,8 @@ function tryCatch(fn) {
   return function() {
     try {
       return fn.apply(fn, arguments);
-    } catch (e) {
-      console.error(e);
+    } catch (e2) {
+      console.error(e2);
     }
   };
 }
@@ -990,7 +990,7 @@ let enabled;
 function normalizePushMessage(message) {
   try {
     return JSON.parse(message);
-  } catch (e) {
+  } catch (e2) {
   }
   return message;
 }
@@ -3321,6 +3321,9 @@ function inject(key, defaultValue, treatDefaultAsFactory = false) {
     warn$2(`inject() can only be used inside setup() or functional components.`);
   }
 }
+function watchEffect(effect, options) {
+  return doWatch(effect, null, options);
+}
 const INITIAL_WATCHER_VALUE = {};
 function watch(source, cb, options) {
   if (!isFunction$1(cb)) {
@@ -5421,14 +5424,14 @@ function findComponentPublicInstance(mpComponents, id) {
   }
   return null;
 }
-function setTemplateRef({ r, f }, refValue, setupState) {
+function setTemplateRef({ r, f: f2 }, refValue, setupState) {
   if (isFunction$1(r)) {
     r(refValue, {});
   } else {
     const _isString = isString$1(r);
     const _isRef = isRef(r);
     if (_isString || _isRef) {
-      if (f) {
+      if (f2) {
         if (!_isRef) {
           return;
         }
@@ -5653,8 +5656,8 @@ function setupRenderEffect(instance) {
   update.id = instance.uid;
   toggleRecurse(instance, true);
   {
-    effect.onTrack = instance.rtc ? (e) => invokeArrayFns$1(instance.rtc, e) : void 0;
-    effect.onTrigger = instance.rtg ? (e) => invokeArrayFns$1(instance.rtg, e) : void 0;
+    effect.onTrack = instance.rtc ? (e2) => invokeArrayFns$1(instance.rtc, e2) : void 0;
+    effect.onTrigger = instance.rtg ? (e2) => invokeArrayFns$1(instance.rtg, e2) : void 0;
     update.ownerInstance = instance;
   }
   update();
@@ -5934,21 +5937,21 @@ function vOn(value, key) {
   return name;
 }
 function createInvoker(initialValue, instance) {
-  const invoker = (e) => {
-    patchMPEvent(e);
-    let args = [e];
-    if (e.detail && e.detail.__args__) {
-      args = e.detail.__args__;
+  const invoker = (e2) => {
+    patchMPEvent(e2);
+    let args = [e2];
+    if (e2.detail && e2.detail.__args__) {
+      args = e2.detail.__args__;
     }
     const eventValue = invoker.value;
-    const invoke = () => callWithAsyncErrorHandling(patchStopImmediatePropagation(e, eventValue), instance, 5, args);
-    const eventTarget = e.target;
+    const invoke = () => callWithAsyncErrorHandling(patchStopImmediatePropagation(e2, eventValue), instance, 5, args);
+    const eventTarget = e2.target;
     const eventSync = eventTarget ? eventTarget.dataset ? String(eventTarget.dataset.eventsync) === "true" : false : false;
-    if (bubbles.includes(e.type) && !eventSync) {
+    if (bubbles.includes(e2.type) && !eventSync) {
       setTimeout(invoke);
     } else {
       const res = invoke();
-      if (e.type === "input" && (isArray$1(res) || isPromise(res))) {
+      if (e2.type === "input" && (isArray$1(res) || isPromise(res))) {
         return;
       }
       return res;
@@ -5992,17 +5995,49 @@ function patchMPEvent(event) {
     }
   }
 }
-function patchStopImmediatePropagation(e, value) {
+function patchStopImmediatePropagation(e2, value) {
   if (isArray$1(value)) {
-    const originalStop = e.stopImmediatePropagation;
-    e.stopImmediatePropagation = () => {
-      originalStop && originalStop.call(e);
-      e._stopped = true;
+    const originalStop = e2.stopImmediatePropagation;
+    e2.stopImmediatePropagation = () => {
+      originalStop && originalStop.call(e2);
+      e2._stopped = true;
     };
-    return value.map((fn) => (e2) => !e2._stopped && fn(e2));
+    return value.map((fn) => (e3) => !e3._stopped && fn(e3));
   } else {
     return value;
   }
+}
+function vFor(source, renderItem) {
+  let ret;
+  if (isArray$1(source) || isString$1(source)) {
+    ret = new Array(source.length);
+    for (let i = 0, l = source.length; i < l; i++) {
+      ret[i] = renderItem(source[i], i, i);
+    }
+  } else if (typeof source === "number") {
+    if (!Number.isInteger(source)) {
+      warn$2(`The v-for range expect an integer value but got ${source}.`);
+      return [];
+    }
+    ret = new Array(source);
+    for (let i = 0; i < source; i++) {
+      ret[i] = renderItem(i + 1, i, i);
+    }
+  } else if (isObject$2(source)) {
+    if (source[Symbol.iterator]) {
+      ret = Array.from(source, (item, i) => renderItem(item, i, i));
+    } else {
+      const keys = Object.keys(source);
+      ret = new Array(keys.length);
+      for (let i = 0, l = keys.length; i < l; i++) {
+        const key = keys[i];
+        ret[i] = renderItem(source[key], key, i);
+      }
+    }
+  } else {
+    ret = [];
+  }
+  return ret;
 }
 function stringifyStyle(value) {
   if (isString$1(value)) {
@@ -6020,14 +6055,21 @@ function stringify(styles) {
   }
   return ret;
 }
+function setRef(ref2, id, opts = {}) {
+  const { $templateRefs } = getCurrentInstance();
+  $templateRefs.push({ i: id, r: ref2, k: opts.k, f: opts.f });
+}
 function setupDevtoolsPlugin() {
 }
 const o = (value, key) => vOn(value, key);
+const f = (source, renderItem) => vFor(source, renderItem);
 const s = (value) => stringifyStyle(value);
+const e = (target, ...sources) => extend(target, ...sources);
 const h = (str) => hyphenate(str);
 const n = (value) => normalizeClass(value);
 const t = (val) => toDisplayString$1(val);
 const p = (props) => renderProps(props);
+const sr = (ref2, id, opts) => setRef(ref2, id, opts);
 function createApp$1(rootComponent, rootProps = null) {
   rootComponent && (rootComponent.mpType = "app");
   return createVueApp(rootComponent, rootProps).use(plugin);
@@ -9014,7 +9056,7 @@ function parseDateTimeArgs(...args) {
     value = new Date(arg1);
     try {
       value.toISOString();
-    } catch (e) {
+    } catch (e2) {
       throw createCoreError(
         16
         /* INVALID_ISO_DATE_ARGUMENT */
@@ -10413,8 +10455,8 @@ async function enableDevTools(app, i18n) {
         });
         resolve2(true);
       });
-    } catch (e) {
-      console.error(e);
+    } catch (e2) {
+      console.error(e2);
       reject(false);
     }
   });
@@ -11024,21 +11066,28 @@ exports.createPinia = createPinia;
 exports.createSSRApp = createSSRApp;
 exports.defineComponent = defineComponent;
 exports.defineStore = defineStore;
+exports.e = e;
+exports.f = f;
 exports.getCurrentInstance = getCurrentInstance;
 exports.index = index;
 exports.inject = inject;
 exports.n = n;
 exports.nextTick$1 = nextTick$1;
 exports.o = o;
+exports.onBeforeMount = onBeforeMount;
 exports.onLoad = onLoad;
 exports.onMounted = onMounted;
 exports.onShareAppMessage = onShareAppMessage;
 exports.onShareTimeline = onShareTimeline;
+exports.onUnmounted = onUnmounted;
+exports.onUpdated = onUpdated;
 exports.p = p;
 exports.provide = provide;
 exports.ref = ref;
 exports.resolveComponent = resolveComponent;
 exports.s = s;
+exports.sr = sr;
 exports.t = t;
 exports.unref = unref;
 exports.watch = watch;
+exports.watchEffect = watchEffect;

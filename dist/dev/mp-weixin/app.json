@@ -2,13 +2,16 @@
   "pages": [
     "pages/home/home",
     "pages/search/search",
-    "pages/community/community"
+    "pages/community/community",
+    "pages/map/map",
+    "pages/jubensha/jubensha",
+    "pages/personalCenter/personalCenter"
   ],
   "window": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "裕农通",
-    "navigationBarBackgroundColor": "#F8F8F8",
-    "backgroundColor": "#F8F8F8",
+    "navigationBarBackgroundColor": "#f5f5f5",
+    "backgroundColor": "#f5f5f5",
     "navigationStyle": "custom"
   },
   "tabBar": {
@@ -18,32 +21,32 @@
       {
         "pagePath": "pages/home/home",
         "text": "首页",
-        "iconPath": "static/tabBar/home_0.svg",
-        "selectedIconPath": "static/tabBar/home_1.svg"
+        "iconPath": "static/tabBar/home_0.png",
+        "selectedIconPath": "static/tabBar/home_1.png"
       },
       {
         "pagePath": "pages/community/community",
         "text": "村情民意",
-        "iconPath": "static/tabBar/community_0.svg",
-        "selectedIconPath": "static/tabBar/community_0.svg"
+        "iconPath": "static/tabBar/community_0.png",
+        "selectedIconPath": "static/tabBar/community_1.png"
       },
       {
-        "pagePath": "pages/home/home",
+        "pagePath": "pages/map/map",
         "text": "地图",
-        "iconPath": "static/tabBar/map_0.svg",
-        "selectedIconPath": "static/tabBar/map_1.svg"
+        "iconPath": "static/tabBar/map_0.png",
+        "selectedIconPath": "static/tabBar/map_1.png"
       },
       {
-        "pagePath": "pages/home/home",
+        "pagePath": "pages/jubensha/jubensha",
         "text": "剧本杀专区",
-        "iconPath": "static/tabBar/jubensha_0.svg",
-        "selectedIconPath": "static/tabBar/jubensha_1.svg"
+        "iconPath": "static/tabBar/jubensha_0.png",
+        "selectedIconPath": "static/tabBar/jubensha_1.png"
       },
       {
-        "pagePath": "pages/home/home",
+        "pagePath": "pages/personalCenter/personalCenter",
         "text": "个人中心",
-        "iconPath": "static/tabBar/personalCenter_0.svg",
-        "selectedIconPath": "static/tabBar/personalCenter_1.svg"
+        "iconPath": "static/tabBar/personalCenter_0.png",
+        "selectedIconPath": "static/tabBar/personalCenter_1.png"
       }
     ]
   },

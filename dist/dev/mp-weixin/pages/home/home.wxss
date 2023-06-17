@@ -1,0 +1,8 @@
+.background.data-v-0cd09a48 {
+  position: relative;
+  top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

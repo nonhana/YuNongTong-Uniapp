@@ -16,14 +16,35 @@
 		{
 			"path": "pages/search/search",
 			"style": {
-				"navigationBarTitleText": "首页",
+				"navigationBarTitleText": "搜索",
 				"enablePullDownRefresh": false
 			}
 		},
 		{
 			"path": "pages/community/community",
 			"style": {
-				"navigationBarTitleText": "首页",
+				"navigationBarTitleText": "社区",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/map/map",
+			"style": {
+				"navigationBarTitleText": "地图",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/jubensha/jubensha",
+			"style": {
+				"navigationBarTitleText": "剧本杀",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/personalCenter/personalCenter",
+			"style": {
+				"navigationBarTitleText": "个人中心",
 				"enablePullDownRefresh": false
 			}
 		},
@@ -31,8 +52,8 @@
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "裕农通",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8",
+		"navigationBarBackgroundColor": "#f5f5f5",
+		"backgroundColor": "#f5f5f5",
 		"navigationStyle": "custom"
 	},
 	"tabBar": {
@@ -43,32 +64,32 @@
 			{
 				"pagePath": "pages/home/home",
 				"text": "首页",
-				"iconPath": "static/tabBar/home_0.svg",
-				"selectedIconPath": "static/tabBar/home_1.svg"
+				"iconPath": "static/tabBar/home_0.png",
+				"selectedIconPath": "static/tabBar/home_1.png"
 			},
 			{
 				"pagePath": "pages/community/community",
 				"text": "村情民意",
-				"iconPath": "static/tabBar/community_0.svg",
-				"selectedIconPath": "static/tabBar/community_0.svg"
+				"iconPath": "static/tabBar/community_0.png",
+				"selectedIconPath": "static/tabBar/community_1.png"
 			},
 			{
-				"pagePath": "pages/home/home",
+				"pagePath": "pages/map/map",
 				"text": "地图",
-				"iconPath": "static/tabBar/map_0.svg",
-				"selectedIconPath": "static/tabBar/map_1.svg"
+				"iconPath": "static/tabBar/map_0.png",
+				"selectedIconPath": "static/tabBar/map_1.png"
 			},
 			{
-				"pagePath": "pages/home/home",
+				"pagePath": "pages/jubensha/jubensha",
 				"text": "剧本杀专区",
-				"iconPath": "static/tabBar/jubensha_0.svg",
-				"selectedIconPath": "static/tabBar/jubensha_1.svg"
+				"iconPath": "static/tabBar/jubensha_0.png",
+				"selectedIconPath": "static/tabBar/jubensha_1.png"
 			},
 			{
-				"pagePath": "pages/home/home",
+				"pagePath": "pages/personalCenter/personalCenter",
 				"text": "个人中心",
-				"iconPath": "static/tabBar/personalCenter_0.svg",
-				"selectedIconPath": "static/tabBar/personalCenter_1.svg"
+				"iconPath": "static/tabBar/personalCenter_0.png",
+				"selectedIconPath": "static/tabBar/personalCenter_1.png"
 			},
 		]
 	}

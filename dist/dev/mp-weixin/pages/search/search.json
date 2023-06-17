@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "首页",
+  "navigationBarTitleText": "搜索",
   "enablePullDownRefresh": false,
   "usingComponents": {
     "tm-app": "../../tmui/components/tm-app/tm-app"

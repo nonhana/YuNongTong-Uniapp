@@ -1,0 +1,1 @@
+<view ref="tmRow" catchtap="{{a}}" class="{{['flex', 'tm-row', 'overflow ', b, c, d]}}" style="{{e + ';' + f + ';' + g + ';' + h + ';' + i + ';' + j + ';' + k}}"><slot></slot></view>

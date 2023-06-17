@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "tm-carousel": "../../tmui/components/tm-carousel/tm-carousel",
+    "tm-app": "../../tmui/components/tm-app/tm-app"
+  }
+}
