@@ -1,0 +1,10 @@
+{
+  "component": true,
+  "usingComponents": {
+    "tm-text": "../../tmui/components/tm-text/tm-text",
+    "tm-col": "../../tmui/components/tm-col/tm-col",
+    "tm-row": "../../tmui/components/tm-row/tm-row",
+    "tm-app": "../../tmui/components/tm-app/tm-app",
+    "recommend-list-item": "../../little/recommendListItem"
+  }
+}

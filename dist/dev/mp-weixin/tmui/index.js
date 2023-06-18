@@ -61,8 +61,7 @@ const globalStyle = {
   navigationBarTextStyle: "black",
   navigationBarTitleText: "裕农通",
   navigationBarBackgroundColor: "#f5f5f5",
-  backgroundColor: "#f5f5f5",
-  navigationStyle: "custom"
+  backgroundColor: "#f5f5f5"
 };
 const tabBar$1 = {
   fontSize: "24rpx",

@@ -1,8 +1,39 @@
 .background.data-v-0cd09a48 {
   position: relative;
-  top: 20px;
   width: 100%;
+  margin: 0 0 50rpx 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.icon.data-v-0cd09a48 {
+  width: 50rpx;
+  height: 50rpx;
+  margin: 0 0 0 10rpx;
+}
+.searchInput.data-v-0cd09a48 {
+  padding: 10rpx;
+  width: 500rpx;
+  border-radius: 5rpx;
+  border: 2rpx solid #E5E6EB;
+  font-family: 'PingFang SC';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28rpx;
+  /* 防止input内部字体无法完全显示 */
+  height: 28rpx;
+}
+.service.data-v-0cd09a48 {
+  width: 80rpx;
+  height: 80rpx;
+}
+.buttons.data-v-0cd09a48 {
+  width: 720rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.buttons-item.data-v-0cd09a48 {
+  background-color: #fff;
+  width: 340rpx;
+  height: 90rpx;
 }

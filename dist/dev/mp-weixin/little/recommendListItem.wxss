@@ -1,0 +1,46 @@
+.recommendListItem.data-v-6b8a1000 {
+  position: relative;
+  width: 340rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hot.data-v-6b8a1000 {
+  position: absolute;
+  top: 10rpx;
+  right: 10rpx;
+  width: 96rpx;
+  height: 34rpx;
+  border-radius: 17rpx;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hot-icon.data-v-6b8a1000 {
+  width: 24rpx;
+  height: 24rpx;
+}
+.hot-num.data-v-6b8a1000 {
+  margin: 0 0 0 10rpx;
+  font-size: 24rpx;
+  color: #3d3d3d;
+}
+.title.data-v-6b8a1000 {
+  position: absolute;
+  bottom: 34rpx;
+  left: 10rpx;
+  font-size: 36rpx;
+  color: #fff;
+}
+.stars.data-v-6b8a1000 {
+  position: absolute;
+  bottom: 34rpx;
+  right: 10rpx;
+  display: flex;
+}
+.stars-item.data-v-6b8a1000 {
+  width: 24rpx;
+  height: 24rpx;
+  margin: 0 0 0 10rpx;
+}
