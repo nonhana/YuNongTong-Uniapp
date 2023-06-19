@@ -6,7 +6,7 @@
           <img class="icon" :src="sideButton" alt="sideButton">
         </tm-col>
         <tm-col :height="80" :col="8" align="start">
-          <input v-model="keywords" class="searchInput" type="text" placeholder="搜索">
+          <input @click="inputClick" v-model="keywords" class="searchInput" type="text" placeholder="搜索">
         </tm-col>
       </tm-row>
       <tm-row :margin="[0, 20, 0, 0]" :width="700" :height="350" :column="10">
@@ -51,6 +51,9 @@
       <tm-row :margin="[0, 20, 0, 0]" :column="10" :width="700">
         <recommendList />
       </tm-row>
+      <tm-row :margin="[0, 20, 0, 0]" :column="10" :width="700">
+        <hotelList />
+      </tm-row>
     </view>
   </tm-app>
 </template>
@@ -59,6 +62,7 @@
 // 引入组件
 import pictureSlide from '../../components/home/pictureSlide.vue'
 import recommendList from '../../components/home/recommendList.vue'
+import hotelList from '@/components/home/hotelList.vue'
 // 引入图片
 import sideButton from '../../static/svg/sideButton.svg'
 import goupiao from '../../static/png/goupiao.png'
@@ -70,6 +74,16 @@ import techan from '../../static/png/techan.png'
 // 引入vue相关
 import { ref } from 'vue'
 const keywords = ref<string>('')
+
+
+const inputClick = () => {
+  uni.navigateTo({
+    url: '../search/search',
+    animationType: 'slide-in-bottom',
+    animationDuration: 200
+  })
+}
+
 </script>
 
 <style scoped lang="less">

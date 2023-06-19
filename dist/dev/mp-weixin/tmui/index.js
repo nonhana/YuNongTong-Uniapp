@@ -25,7 +25,9 @@ const pages$1 = [
     path: "pages/search/search",
     style: {
       navigationBarTitleText: "搜索",
-      enablePullDownRefresh: false
+      enablePullDownRefresh: false,
+      animationType: "slide-in-bottom",
+      animationDuration: 50
     }
   },
   {

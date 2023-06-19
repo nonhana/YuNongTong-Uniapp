@@ -1,7 +1,7 @@
 {
-    "name": "tmui3.0",
-    "appid": "",
-    "description": "tmui3.0新一代组件库，拥抱vue3,pinia,tmui3.0 demo展示应用",
+    "name": "裕农通旅游微信小程序",
+    "appid": "wxdde27f8eb91d7f16",
+    "description": "裕农通旅游微信小程序",
     "versionName": "3.1.06",
     "versionCode": "100",
     "transformPx": false,
@@ -97,7 +97,7 @@
     },
     "quickapp": {},
     "mp-weixin": {
-        "appid": "",
+        "appid": "wxdde27f8eb91d7f16",
         "darkmode": true,
         "setting": {
             "urlCheck": false,

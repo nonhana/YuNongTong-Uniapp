@@ -65,41 +65,22 @@ const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
           width: 700
         }),
         f: common_vendor.p({
+          type: 0,
           ["item-info"]: recommendList.value[0]
         }),
         g: common_vendor.p({
-          height: 500,
-          col: 5
-        }),
-        h: common_vendor.p({
+          type: 1,
           ["item-info"]: recommendList.value[1]
         }),
-        i: common_vendor.p({
-          height: 250,
-          col: 10
-        }),
-        j: common_vendor.p({
-          column: 10
-        }),
-        k: common_vendor.p({
+        h: common_vendor.p({
+          type: 1,
           ["item-info"]: recommendList.value[2]
         }),
-        l: common_vendor.p({
-          height: 250,
-          col: 10
-        }),
-        m: common_vendor.p({
-          column: 10
-        }),
-        n: common_vendor.p({
-          height: 500,
-          col: 5
-        }),
-        o: common_vendor.p({
+        i: common_vendor.p({
           column: 10,
           width: 700
         }),
-        p: common_vendor.p({
+        j: common_vendor.p({
           color: "#fff"
         })
       };

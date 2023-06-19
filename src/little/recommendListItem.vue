@@ -1,11 +1,15 @@
 <template>
-  <view class="recommendListItem">
+  <view class="recommendListItem" :style="{
+    height: type === 0 ? '500rpx' : '240rpx',
+  }">
     <view class="hot">
       <img class="hot-icon" :src="hot" alt="hot">
       <text class="hot-num">{{ itemInfo.item_hot }}</text>
     </view>
     <text class="title">{{ itemInfo.item_title }}</text>
-    <img :src="itemInfo.item_img" alt="img">
+    <img :style="{
+      height: type === 0 ? '500rpx' : '240rpx',
+    }" :src="itemInfo.item_img" alt="img">
     <view class="stars">
       <img class="stars-item" v-for="_ in itemInfo.item_star" :src="star" alt="star">
     </view>
@@ -24,7 +28,8 @@ defineProps<
       item_title: string,
       item_hot: number,
       item_star: number
-    }
+    },
+    type: number
   }>()
 
 </script>
@@ -32,7 +37,9 @@ defineProps<
 <style scoped lang="less">
 .recommendListItem {
   position: relative;
-  width: 340rpx;
+  width: 330rpx;
+  border-radius: 10rpx;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,7 +77,7 @@ defineProps<
   color: #fff;
 }
 
-.stars{
+.stars {
   position: absolute;
   bottom: 34rpx;
   right: 10rpx;

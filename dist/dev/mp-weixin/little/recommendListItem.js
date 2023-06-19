@@ -4,7 +4,8 @@ const common_assets = require("../common/assets.js");
 const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
   __name: "recommendListItem",
   props: {
-    itemInfo: null
+    itemInfo: null,
+    type: null
   },
   setup(__props) {
     return (_ctx, _cache) => {
@@ -12,11 +13,13 @@ const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
         a: common_vendor.unref(common_assets.hot),
         b: common_vendor.t(__props.itemInfo.item_hot),
         c: common_vendor.t(__props.itemInfo.item_title),
-        d: __props.itemInfo.item_img,
-        e: common_vendor.f(__props.itemInfo.item_star, (_, k0, i0) => {
+        d: __props.type === 0 ? "500rpx" : "240rpx",
+        e: __props.itemInfo.item_img,
+        f: common_vendor.f(__props.itemInfo.item_star, (_, k0, i0) => {
           return {};
         }),
-        f: common_vendor.unref(common_assets.star)
+        g: common_vendor.unref(common_assets.star),
+        h: __props.type === 0 ? "500rpx" : "240rpx"
       };
     };
   }

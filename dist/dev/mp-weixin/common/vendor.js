@@ -1261,8 +1261,8 @@ function populateParameters(fromRes, toRes) {
   let _SDKVersion = SDKVersion;
   const hostLanguage = language.replace(/_/g, "-");
   const parameters = {
-    appId: "",
-    appName: "tmui3.0",
+    appId: "wxdde27f8eb91d7f16",
+    appName: "裕农通旅游微信小程序",
     appVersion: "3.1.06",
     appVersionCode: "100",
     appLanguage: getAppLanguage(hostLanguage),
@@ -1405,8 +1405,8 @@ const getAppBaseInfo = {
       hostName: _hostName,
       hostSDKVersion: SDKVersion,
       hostTheme: theme,
-      appId: "",
-      appName: "tmui3.0",
+      appId: "wxdde27f8eb91d7f16",
+      appName: "裕农通旅游微信小程序",
       appVersion: "3.1.06",
       appVersionCode: "100",
       appLanguage: getAppLanguage(hostLanguage)

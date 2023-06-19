@@ -1,0 +1,56 @@
+.background.data-v-cdfa925e {
+  position: relative;
+  width: 100%;
+  margin: 0 0 50rpx 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icon.data-v-cdfa925e {
+  width: 50rpx;
+  height: 50rpx;
+  margin: 0 0 0 10rpx;
+}
+.little-icon.data-v-cdfa925e {
+  width: 30rpx;
+  height: 30rpx;
+}
+.searchInput.data-v-cdfa925e {
+  padding: 10rpx;
+  width: 500rpx;
+  border-radius: 5rpx;
+  border: 2rpx solid #E5E6EB;
+  font-family: 'PingFang SC';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28rpx;
+  height: 28rpx;
+}
+.labels.data-v-cdfa925e {
+  display: flex;
+  width: 1000rpx;
+}
+.labels-text.data-v-cdfa925e {
+  font-size: 28rpx;
+  margin: 0 18rpx;
+}
+.label.data-v-cdfa925e,
+.labelSelected.data-v-cdfa925e {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20rpx;
+  padding: 0 10rpx;
+  height: 60rpx;
+  border-radius: 40rpx;
+}
+.label.data-v-cdfa925e {
+  color: black;
+  border: solid 2rpx #E5E6EB;
+  background-color: #fff;
+}
+.labelSelected.data-v-cdfa925e {
+  color: #fff;
+  border: solid 2rpx #FF7A28;
+  background-color: #FF7A28;
+}

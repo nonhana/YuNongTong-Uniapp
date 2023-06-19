@@ -7,6 +7,7 @@
     "tm-text": "../../tmui/components/tm-text/tm-text",
     "tm-app": "../../tmui/components/tm-app/tm-app",
     "picture-slide": "../../components/home/pictureSlide",
-    "recommend-list": "../../components/home/recommendList"
+    "recommend-list": "../../components/home/recommendList",
+    "hotel-list": "../../components/home/hotelList"
   }
 }

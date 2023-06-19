@@ -1,7 +1,13 @@
 {
   "navigationBarTitleText": "搜索",
   "enablePullDownRefresh": false,
+  "animationType": "slide-in-bottom",
+  "animationDuration": 50,
   "usingComponents": {
-    "tm-app": "../../tmui/components/tm-app/tm-app"
+    "tm-col": "../../tmui/components/tm-col/tm-col",
+    "tm-row": "../../tmui/components/tm-row/tm-row",
+    "tm-text": "../../tmui/components/tm-text/tm-text",
+    "tm-app": "../../tmui/components/tm-app/tm-app",
+    "results-list": "../../components/search/resultsList"
   }
 }

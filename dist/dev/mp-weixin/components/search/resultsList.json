@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "tm-divider": "../../tmui/components/tm-divider/tm-divider",
+    "tm-app": "../../tmui/components/tm-app/tm-app",
+    "result-item": "../../little/resultItem"
+  }
+}

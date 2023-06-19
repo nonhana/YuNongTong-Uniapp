@@ -13,14 +13,22 @@ const _easycom_tm_row = () => "../../tmui/components/tm-row/tm-row.js";
 const _easycom_tm_text = () => "../../tmui/components/tm-text/tm-text.js";
 const _easycom_tm_app = () => "../../tmui/components/tm-app/tm-app.js";
 if (!Math) {
-  (_easycom_tm_col + _easycom_tm_row + pictureSlide + _easycom_tm_text + recommendList + _easycom_tm_app)();
+  (_easycom_tm_col + _easycom_tm_row + pictureSlide + _easycom_tm_text + recommendList + hotelList + _easycom_tm_app)();
 }
 const pictureSlide = () => "../../components/home/pictureSlide.js";
 const recommendList = () => "../../components/home/recommendList.js";
+const hotelList = () => "../../components/home/hotelList.js";
 const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
   __name: "home",
   setup(__props) {
     const keywords = common_vendor.ref("");
+    const inputClick = () => {
+      common_vendor.index.navigateTo({
+        url: "../search/search",
+        animationType: "slide-in-bottom",
+        animationDuration: 200
+      });
+    };
     return (_ctx, _cache) => {
       return {
         a: common_vendor.unref(common_assets.sideButton),
@@ -29,85 +37,91 @@ const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
           col: 2,
           align: "start"
         }),
-        c: keywords.value,
-        d: common_vendor.o(($event) => keywords.value = $event.detail.value),
-        e: common_vendor.p({
+        c: common_vendor.o(inputClick),
+        d: keywords.value,
+        e: common_vendor.o(($event) => keywords.value = $event.detail.value),
+        f: common_vendor.p({
           height: 80,
           col: 8,
           align: "start"
         }),
-        f: common_vendor.p({
+        g: common_vendor.p({
           width: 700,
           column: 10
         }),
-        g: common_vendor.p({
+        h: common_vendor.p({
           col: 10
         }),
-        h: common_vendor.p({
+        i: common_vendor.p({
           margin: [0, 20, 0, 0],
           width: 700,
           height: 350,
           column: 10
         }),
-        i: common_vendor.unref(common_assets.goupiao),
-        j: common_vendor.p({
+        j: common_vendor.unref(common_assets.goupiao),
+        k: common_vendor.p({
           label: "购票"
         }),
-        k: common_vendor.p({
+        l: common_vendor.p({
           col: 2,
           height: 180
         }),
-        l: common_vendor.unref(common_assets.huodong),
-        m: common_vendor.p({
+        m: common_vendor.unref(common_assets.huodong),
+        n: common_vendor.p({
           label: "活动"
         }),
-        n: common_vendor.p({
+        o: common_vendor.p({
           col: 2,
           height: 180
         }),
-        o: common_vendor.unref(common_assets.minsu),
-        p: common_vendor.p({
+        p: common_vendor.unref(common_assets.minsu),
+        q: common_vendor.p({
           label: "民宿"
         }),
-        q: common_vendor.p({
+        r: common_vendor.p({
           col: 2,
           height: 180
         }),
-        r: common_vendor.unref(common_assets.wenchuang),
-        s: common_vendor.p({
+        s: common_vendor.unref(common_assets.wenchuang),
+        t: common_vendor.p({
           label: "文创"
         }),
-        t: common_vendor.p({
+        v: common_vendor.p({
           col: 2,
           height: 180
         }),
-        v: common_vendor.unref(common_assets.changdi),
-        w: common_vendor.p({
+        w: common_vendor.unref(common_assets.changdi),
+        x: common_vendor.p({
           label: "场地"
         }),
-        x: common_vendor.p({
+        y: common_vendor.p({
           col: 2,
           height: 180
         }),
-        y: common_vendor.unref(common_assets.techan),
-        z: common_vendor.p({
+        z: common_vendor.unref(common_assets.techan),
+        A: common_vendor.p({
           label: "特产"
         }),
-        A: common_vendor.p({
+        B: common_vendor.p({
           col: 2,
           height: 180
         }),
-        B: common_vendor.p({
+        C: common_vendor.p({
           margin: [0, 20, 0, 0],
           width: 700,
           column: 12
         }),
-        C: common_vendor.p({
+        D: common_vendor.p({
           margin: [0, 20, 0, 0],
           column: 10,
           width: 700
         }),
-        D: common_vendor.p({
+        E: common_vendor.p({
+          margin: [0, 20, 0, 0],
+          column: 10,
+          width: 700
+        }),
+        F: common_vendor.p({
           color: "#f5f5f5"
         })
       };

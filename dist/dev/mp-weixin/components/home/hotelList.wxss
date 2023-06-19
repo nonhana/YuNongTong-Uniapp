@@ -1,0 +1,11 @@
+.icon.data-v-87387611 {
+  width: 50rpx;
+  height: 50rpx;
+  margin: 0 0 0 10rpx;
+}
+.hotelList.data-v-87387611 {
+  width: 100%;
+  margin: 0 0 30rpx 0;
+  display: flex;
+  justify-content: center;
+}

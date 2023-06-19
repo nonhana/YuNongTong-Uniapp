@@ -9,21 +9,19 @@
       </tm-col>
     </tm-row>
     <tm-row :column="10" :width="700">
-      <tm-col :height="500" :col="5">
-        <recommendListItem :item-info="recommendList[0]" />
-      </tm-col>
-      <tm-col :height="500" :col="5">
-        <tm-row :column="10">
-          <tm-col :height="250" :col="10">
-            <recommendListItem :item-info="recommendList[1]" />
-          </tm-col>
-        </tm-row>
-        <tm-row :column="10">
-          <tm-col :height="250" :col="10">
-            <recommendListItem :item-info="recommendList[2]" />
-          </tm-col>
-        </tm-row>
-      </tm-col>
+      <view class="recommendList">
+        <view style="margin: 0 20rpx 0 0;">
+          <recommendListItem :type="0" :item-info="recommendList[0]" />
+        </view>
+        <view>
+          <view>
+            <recommendListItem :type="1" :item-info="recommendList[1]" />
+          </view>
+          <view style="margin: 20rpx 0 0 0;">
+            <recommendListItem :type="1" :item-info="recommendList[2]" />
+          </view>
+        </view>
+      </view>
     </tm-row>
   </tm-app>
 </template>
@@ -74,5 +72,12 @@ const recommendList = ref<recommendListType[]>([
   width: 50rpx;
   height: 50rpx;
   margin: 0 0 0 10rpx;
+}
+
+.recommendList {
+  width: 100%;
+  margin: 0 0 30rpx 0;
+  display: flex;
+  justify-content: center;
 }
 </style>
