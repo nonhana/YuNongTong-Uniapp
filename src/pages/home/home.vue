@@ -1,9 +1,29 @@
 <template>
   <tm-app color="#f5f5f5">
     <view class="background">
+      <tm-drawer :width="550" hide-header :placement="pos" v-model:show="showWin">
+        <tm-row :margin="[0, 20, 0, 0]" width="550" :column="10">
+          <tm-col :height="60" :col="2" align="center">
+            <view class="header">
+              <img :src="user_info.user_header" alt="header" />
+            </view>
+          </tm-col>
+          <tm-col :height="60" :col="3" align="center">
+            <tm-text :label="user_info.user_name"></tm-text>
+          </tm-col>
+          <tm-col :height="60" :col="5" align="start">
+            <img class="icon" :src="doubleArrow" alt="icon" />
+          </tm-col>
+        </tm-row>
+
+        <view class="exit">
+          <tm-text color="#ff5d5d" label="退出登录"></tm-text>
+        </view>
+        <tm-divider></tm-divider>
+      </tm-drawer>
       <tm-row :width="700" :column="10">
         <tm-col :height="80" :col="2" align="start">
-          <img class="icon" :src="sideButton" alt="sideButton">
+          <img @click="openSide" class="icon" :src="sideButton" alt="sideButton">
         </tm-col>
         <tm-col :height="80" :col="8" align="start">
           <input @click="inputClick" v-model="keywords" class="searchInput" type="text" placeholder="搜索">
@@ -65,6 +85,7 @@ import recommendList from '../../components/home/recommendList.vue'
 import hotelList from '@/components/home/hotelList.vue'
 // 引入图片
 import sideButton from '../../static/svg/sideButton.svg'
+import doubleArrow from '@/static/svg/doubleArrow.svg'
 import goupiao from '../../static/png/goupiao.png'
 import huodong from '../../static/png/huodong.png'
 import minsu from '../../static/png/minsu.png'
@@ -75,6 +96,17 @@ import techan from '../../static/png/techan.png'
 import { ref } from 'vue'
 const keywords = ref<string>('')
 
+const pos = ref<string>('left')
+const showWin = ref<boolean>(false)
+const user_info = {
+  user_id: 1,
+  user_header: "https://dummyimage.com/400X400",
+  user_name: "用户名称"
+}
+
+const openSide = () => {
+  showWin.value = true
+}
 
 const inputClick = () => {
   uni.navigateTo({
@@ -83,7 +115,6 @@ const inputClick = () => {
     animationDuration: 200
   })
 }
-
 </script>
 
 <style scoped lang="less">
@@ -129,6 +160,35 @@ const inputClick = () => {
     background-color: #fff;
     width: 340rpx;
     height: 90rpx;
+  }
+}
+
+.header {
+  position: relative;
+  width: 60rpx;
+  height: 60rpx;
+  overflow: hidden;
+  border-radius: 30rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.exit {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 60rpx;
+  width: 300rpx;
+  height: 70rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3rpx solid #ff5d5d;
+  border-radius: 5rpx;
+
+  span {
+    color: #ff5d5d;
   }
 }
 </style>

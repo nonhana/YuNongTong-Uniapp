@@ -15,6 +15,13 @@ const easycom = {
 };
 const pages$1 = [
   {
+    path: "pages/personalCenter/personalCenter",
+    style: {
+      navigationBarTitleText: "个人中心",
+      enablePullDownRefresh: false
+    }
+  },
+  {
     path: "pages/home/home",
     style: {
       navigationBarTitleText: "首页",
@@ -48,13 +55,6 @@ const pages$1 = [
     path: "pages/jubensha/jubensha",
     style: {
       navigationBarTitleText: "剧本杀",
-      enablePullDownRefresh: false
-    }
-  },
-  {
-    path: "pages/personalCenter/personalCenter",
-    style: {
-      navigationBarTitleText: "个人中心",
       enablePullDownRefresh: false
     }
   }

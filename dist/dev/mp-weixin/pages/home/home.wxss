@@ -37,3 +37,29 @@
   width: 340rpx;
   height: 90rpx;
 }
+.header.data-v-0cd09a48 {
+  position: relative;
+  width: 60rpx;
+  height: 60rpx;
+  overflow: hidden;
+  border-radius: 30rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.exit.data-v-0cd09a48 {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 60rpx;
+  width: 300rpx;
+  height: 70rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3rpx solid #ff5d5d;
+  border-radius: 5rpx;
+}
+.exit span.data-v-0cd09a48 {
+  color: #ff5d5d;
+}

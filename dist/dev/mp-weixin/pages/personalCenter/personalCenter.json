@@ -2,6 +2,9 @@
   "navigationBarTitleText": "个人中心",
   "enablePullDownRefresh": false,
   "usingComponents": {
+    "tm-col": "../../tmui/components/tm-col/tm-col",
+    "tm-text": "../../tmui/components/tm-text/tm-text",
+    "tm-row": "../../tmui/components/tm-row/tm-row",
     "tm-app": "../../tmui/components/tm-app/tm-app"
   }
 }

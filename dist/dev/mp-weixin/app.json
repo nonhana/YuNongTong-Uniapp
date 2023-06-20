@@ -1,11 +1,11 @@
 {
   "pages": [
+    "pages/personalCenter/personalCenter",
     "pages/home/home",
     "pages/search/search",
     "pages/community/community",
     "pages/map/map",
-    "pages/jubensha/jubensha",
-    "pages/personalCenter/personalCenter"
+    "pages/jubensha/jubensha"
   ],
   "window": {
     "navigationBarTextStyle": "black",

@@ -3,8 +3,10 @@
   "enablePullDownRefresh": false,
   "usingComponents": {
     "tm-col": "../../tmui/components/tm-col/tm-col",
-    "tm-row": "../../tmui/components/tm-row/tm-row",
     "tm-text": "../../tmui/components/tm-text/tm-text",
+    "tm-row": "../../tmui/components/tm-row/tm-row",
+    "tm-divider": "../../tmui/components/tm-divider/tm-divider",
+    "tm-drawer": "../../tmui/components/tm-drawer/tm-drawer",
     "tm-app": "../../tmui/components/tm-app/tm-app",
     "picture-slide": "../../components/home/pictureSlide",
     "recommend-list": "../../components/home/recommendList",

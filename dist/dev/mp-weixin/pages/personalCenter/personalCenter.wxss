@@ -1,0 +1,30 @@
+.header.data-v-28a22860 {
+  position: relative;
+  width: 98rpx;
+  height: 98rpx;
+  border: 1px solid #3d3d3d;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-img.data-v-28a22860 {
+  width: 80rpx;
+  height: 80rpx;
+}
+.userinfo.data-v-28a22860 {
+  position: relative;
+  height: 90rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.icon.data-v-28a22860 {
+  width: 70rpx;
+  height: 70rpx;
+}
+.little-icon.data-v-28a22860 {
+  width: 50rpx;
+  height: 50rpx;
+}
