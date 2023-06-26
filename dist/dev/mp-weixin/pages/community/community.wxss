@@ -1,0 +1,22 @@
+.headpic.data-v-38f92639 {
+  position: absolute;
+  width: 100%;
+  height: 500rpx;
+}
+.introduce.data-v-38f92639 {
+  position: relative;
+  margin: 450rpx 0 0 0;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 40rpx 40rpx 0 0;
+}
+.details.data-v-38f92639 {
+  position: relative;
+  margin: 30rpx 0 0 0;
+  padding: 0 0 30rpx 0;
+  width: 100%;
+  background-color: #fff;
+}
+.details-text.data-v-38f92639 {
+  margin: 20rpx 10rpx 0;
+}

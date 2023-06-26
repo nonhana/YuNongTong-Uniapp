@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "剧本杀",
+  "navigationBarTitleText": "剧本杀专区",
   "enablePullDownRefresh": false,
   "usingComponents": {
     "tm-app": "../../tmui/components/tm-app/tm-app"

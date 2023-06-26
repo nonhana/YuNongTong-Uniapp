@@ -43,6 +43,11 @@ const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
         animationDuration: 200
       });
     };
+    const jumpToGouPiao = () => {
+      common_vendor.index.navigateTo({
+        url: "../search/search"
+      });
+    };
     return (_ctx, _cache) => {
       return {
         a: user_info.user_header,
@@ -113,59 +118,55 @@ const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
         w: common_vendor.p({
           label: "购票"
         }),
-        x: common_vendor.p({
+        x: common_vendor.o(jumpToGouPiao),
+        y: common_vendor.p({
           col: 2,
           height: 180
         }),
-        y: common_vendor.unref(common_assets.huodong),
-        z: common_vendor.p({
+        z: common_vendor.unref(common_assets.huodong),
+        A: common_vendor.p({
           label: "活动"
         }),
-        A: common_vendor.p({
+        B: common_vendor.p({
           col: 2,
           height: 180
         }),
-        B: common_vendor.unref(common_assets.minsu),
-        C: common_vendor.p({
+        C: common_vendor.unref(common_assets.minsu),
+        D: common_vendor.p({
           label: "民宿"
         }),
-        D: common_vendor.p({
+        E: common_vendor.p({
           col: 2,
           height: 180
         }),
-        E: common_vendor.unref(common_assets.wenchuang),
-        F: common_vendor.p({
+        F: common_vendor.unref(common_assets.wenchuang),
+        G: common_vendor.p({
           label: "文创"
         }),
-        G: common_vendor.p({
+        H: common_vendor.p({
           col: 2,
           height: 180
         }),
-        H: common_vendor.unref(common_assets.changdi),
-        I: common_vendor.p({
+        I: common_vendor.unref(common_assets.changdi),
+        J: common_vendor.p({
           label: "场地"
         }),
-        J: common_vendor.p({
+        K: common_vendor.p({
           col: 2,
           height: 180
         }),
-        K: common_vendor.unref(common_assets.techan),
-        L: common_vendor.p({
+        L: common_vendor.unref(common_assets.techan),
+        M: common_vendor.p({
           label: "特产"
         }),
-        M: common_vendor.p({
+        N: common_vendor.p({
           col: 2,
           height: 180
-        }),
-        N: common_vendor.p({
-          margin: [0, 20, 0, 0],
-          width: 700,
-          column: 12
         }),
         O: common_vendor.p({
           margin: [0, 20, 0, 0],
-          column: 10,
-          width: 700
+          width: 700,
+          column: 12
         }),
         P: common_vendor.p({
           margin: [0, 20, 0, 0],
@@ -173,6 +174,11 @@ const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
           width: 700
         }),
         Q: common_vendor.p({
+          margin: [0, 20, 0, 0],
+          column: 10,
+          width: 700
+        }),
+        R: common_vendor.p({
           color: "#f5f5f5"
         })
       };

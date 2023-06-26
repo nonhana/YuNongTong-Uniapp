@@ -11,12 +11,12 @@ require("./tmui/tool/lib/share.js");
 require("./tmui/tool/lib/tmuiconfigDefault.js");
 require("./tmui/tool/router/index.js");
 if (!Math) {
-  "./pages/personalCenter/personalCenter.js";
   "./pages/home/home.js";
-  "./pages/search/search.js";
   "./pages/community/community.js";
+  "./pages/search/search.js";
   "./pages/map/map.js";
   "./pages/jubensha/jubensha.js";
+  "./pages/personalCenter/personalCenter.js";
 }
 const _sfc_main = {};
 function _sfc_render(_ctx, _cache) {

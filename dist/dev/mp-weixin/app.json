@@ -1,11 +1,11 @@
 {
   "pages": [
-    "pages/personalCenter/personalCenter",
     "pages/home/home",
-    "pages/search/search",
     "pages/community/community",
+    "pages/search/search",
     "pages/map/map",
-    "pages/jubensha/jubensha"
+    "pages/jubensha/jubensha",
+    "pages/personalCenter/personalCenter"
   ],
   "window": {
     "navigationBarTextStyle": "black",
@@ -25,7 +25,7 @@
       },
       {
         "pagePath": "pages/community/community",
-        "text": "村情民意",
+        "text": "社区",
         "iconPath": "static/tabBar/community_0.png",
         "selectedIconPath": "static/tabBar/community_1.png"
       },

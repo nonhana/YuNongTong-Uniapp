@@ -15,16 +15,16 @@ const easycom = {
 };
 const pages$1 = [
   {
-    path: "pages/personalCenter/personalCenter",
+    path: "pages/home/home",
     style: {
-      navigationBarTitleText: "个人中心",
+      navigationBarTitleText: "首页",
       enablePullDownRefresh: false
     }
   },
   {
-    path: "pages/home/home",
+    path: "pages/community/community",
     style: {
-      navigationBarTitleText: "首页",
+      navigationBarTitleText: "社区",
       enablePullDownRefresh: false
     }
   },
@@ -38,13 +38,6 @@ const pages$1 = [
     }
   },
   {
-    path: "pages/community/community",
-    style: {
-      navigationBarTitleText: "社区",
-      enablePullDownRefresh: false
-    }
-  },
-  {
     path: "pages/map/map",
     style: {
       navigationBarTitleText: "地图",
@@ -54,7 +47,14 @@ const pages$1 = [
   {
     path: "pages/jubensha/jubensha",
     style: {
-      navigationBarTitleText: "剧本杀",
+      navigationBarTitleText: "剧本杀专区",
+      enablePullDownRefresh: false
+    }
+  },
+  {
+    path: "pages/personalCenter/personalCenter",
+    style: {
+      navigationBarTitleText: "个人中心",
       enablePullDownRefresh: false
     }
   }
@@ -78,7 +78,7 @@ const tabBar$1 = {
     },
     {
       pagePath: "pages/community/community",
-      text: "村情民意",
+      text: "社区",
       iconPath: "static/tabBar/community_0.png",
       selectedIconPath: "static/tabBar/community_1.png"
     },

@@ -35,7 +35,7 @@ import minsu1 from '@/static/img/minsu1.png'
 import minsu2 from '@/static/img/minsu1.png'
 import more from '../../static/svg/more.svg'
 import getDOM from '@/utils/getDOM'
-import { ref, onMounted, getCurrentInstance } from 'vue'
+import { ref, onMounted } from 'vue'
 
 type hotelListType = {
   item_id: number,

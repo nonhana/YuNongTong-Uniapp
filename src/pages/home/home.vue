@@ -15,7 +15,6 @@
             <img class="icon" :src="doubleArrow" alt="icon" />
           </tm-col>
         </tm-row>
-
         <view class="exit">
           <tm-text color="#ff5d5d" label="退出登录"></tm-text>
         </view>
@@ -35,7 +34,7 @@
         </tm-col>
       </tm-row>
       <tm-row :margin="[0, 20, 0, 0]" :width="700" :column="12">
-        <tm-col :col="2" :height="180">
+        <tm-col @click="jumpToGouPiao" :col="2" :height="180">
           <img class="service" :src="goupiao" alt="goupiao">
           <tm-text label="购票"></tm-text>
         </tm-col>
@@ -113,6 +112,12 @@ const inputClick = () => {
     url: '../search/search',
     animationType: 'slide-in-bottom',
     animationDuration: 200
+  })
+}
+
+const jumpToGouPiao = () => {
+  uni.navigateTo({
+    url: "../search/search"
   })
 }
 </script>
