@@ -28,13 +28,12 @@ const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
       played: 108,
       introduce: "1948年，中共浙东临委为贯彻依靠路西、发展浙西、打通浙皖通道的战略部署，9月15日，在浦江马剑乡石门村（今诸暨市）以原会稽山人民抗暴游击司令部等游击队为基础，成立浙东人民解放军金萧支队，支队长蒋明达，政委张凡，下辖7个大队。金萧支队以诸暨、浦江、桐庐、富阳四县毗邻地区为作战中心，以四管乡（新合乡）为后勤基地，广泛开展斗争。",
       charactor_list: [
-        { "id": 0, "name": "张修", "sex": "男", "identity": "旅店老板" },
-        { "id": 1, "name": "黄煜", "sex": "男", "identity": "地主家少爷" },
-        { "id": 2, "name": "刘浩", "sex": "男", "identity": "国军特务" },
-        { "id": 3, "name": "叶伟", "sex": "男", "identity": "县警察厅厅长" },
-        { "id": 4, "name": "王柏", "sex": "男", "identity": "为旅店送菜的农民" },
-        { "id": 5, "name": "陈绍", "sex": "男", "identity": "店小二" },
-        { "id": 6, "name": "钟宛", "sex": "女", "identity": "处长秘书" }
+        { "id": 0, "img": common_assets.charactor1, "name": "张修", "sex": "男", "identity": "旅店老板" },
+        { "id": 1, "img": common_assets.charactor2, "name": "黄煜", "sex": "男", "identity": "地主家少爷" },
+        { "id": 2, "img": common_assets.charactor3, "name": "刘浩", "sex": "男", "identity": "国军特务" },
+        { "id": 3, "img": common_assets.charactor4, "name": "叶伟", "sex": "男", "identity": "县警察厅厅长" },
+        { "id": 4, "img": common_assets.charactor5, "name": "陈绍", "sex": "男", "identity": "店小二" },
+        { "id": 5, "img": common_assets.charactor6, "name": "钟宛", "sex": "女", "identity": "处长秘书" }
       ]
     };
     const instance = common_vendor.getCurrentInstance();
@@ -85,7 +84,7 @@ const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
             pixelRatio: pixelRatio.value,
             animation: true,
             background: "#FFFFFF",
-            color: ["#000000"],
+            color: ["#E4BC9E"],
             padding: [15, 30, 0, 5],
             enableScroll: false,
             legend: {},
@@ -103,7 +102,7 @@ const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
                 width: 30,
                 meterBorde: 1,
                 meterFillColor: "#FFFFFF",
-                activeBgColor: "#000000",
+                activeBgColor: "#E4BC9E",
                 activeBgOpacity: 0.08,
                 categoryGap: 2
               }
@@ -151,17 +150,16 @@ const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
         q: common_vendor.t((jubensha_details.rate.people_num / 1e4).toFixed(1)),
         r: common_vendor.o(tap),
         s: common_vendor.t(jubensha_details.introduce),
-        t: common_vendor.unref(common_assets.charactor1),
-        v: common_vendor.unref(common_assets.charactor2),
-        w: common_vendor.f(jubensha_details.charactor_list, (item, k0, i0) => {
+        t: common_vendor.f(jubensha_details.charactor_list, (item, k0, i0) => {
           return {
-            a: common_vendor.t(item.name),
-            b: common_vendor.t(item.sex),
-            c: common_vendor.t(item.identity)
+            a: item.img,
+            b: common_vendor.t(item.name),
+            c: common_vendor.t(item.sex),
+            d: common_vendor.t(item.identity)
           };
         }),
-        x: common_vendor.p({
-          color: "#fff"
+        v: common_vendor.p({
+          color: "#f5f5f5"
         })
       };
     };

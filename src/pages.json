@@ -56,7 +56,6 @@
 		"navigationBarTitleText": "裕农通",
 		"navigationBarBackgroundColor": "#f5f5f5",
 		"backgroundColor": "#f5f5f5",
-		// "navigationStyle": "custom"
 	},
 	"tabBar": {
 		"fontSize": "24rpx",

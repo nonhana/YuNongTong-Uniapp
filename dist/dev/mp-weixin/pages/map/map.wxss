@@ -1,0 +1,16 @@
+movable-view.data-v-be366bed {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+}
+movable-area.data-v-be366bed {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+movable-view image.data-v-be366bed {
+  width: 100%;
+}

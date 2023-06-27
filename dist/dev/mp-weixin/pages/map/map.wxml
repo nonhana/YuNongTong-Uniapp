@@ -1,1 +1,1 @@
-<tm-app u-i="392a6ed4-0" bind:__l="__l"></tm-app>
+<tm-app wx:if="{{b}}" class="data-v-be366bed" u-s="{{['d']}}" u-i="be366bed-0" bind:__l="__l" u-p="{{b}}"><view class="data-v-be366bed"><view class="uni-padding-wrap uni-common-mt data-v-be366bed"><movable-area class="data-v-be366bed" scale-area><movable-view class="data-v-be366bed" direction="all" scale="true" scale-min="3" scale-max="10"><image class="data-v-be366bed" src="{{a}}" mode="widthFix"></image></movable-view></movable-area></view></view></tm-app>

@@ -4,11 +4,11 @@
 }
 .header.data-v-13ce01db {
   position: relative;
-  margin: 10rpx 0 0 0;
   width: 100%;
   height: 80rpx;
-  box-shadow: 0rpx -5rpx 10rpx rgba(0, 0, 0, 0.2);
-  border: 1px solid #888888;
+  border: 1px solid #fff;
+  border-radius: 30rpx;
+  background-color: #101010;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,17 +16,20 @@
 .header-title.data-v-13ce01db {
   width: 70%;
   height: 50rpx;
-  border: 1px solid #888888;
+  border: 1px solid #BBBBBB;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .header-title text.data-v-13ce01db {
   font-size: 30rpx;
-  font-weight: lighter;
-  color: #888888;
+  font-weight: normal;
+  color: #BBBBBB;
 }
-.info.data-v-13ce01db {
+.background.data-v-13ce01db {
+  background-color: #101010;
+}
+.background .info.data-v-13ce01db {
   position: relative;
   margin: 30rpx auto 0;
   width: 95%;
@@ -34,11 +37,11 @@
   justify-content: space-between;
   align-items: center;
 }
-.info-pic.data-v-13ce01db {
+.background .info-pic.data-v-13ce01db {
   width: 254rpx;
   height: 354rpx;
 }
-.info-details.data-v-13ce01db {
+.background .info-details.data-v-13ce01db {
   width: 400rpx;
   height: 300rpx;
   display: flex;
@@ -46,44 +49,44 @@
   justify-content: space-between;
   position: relative;
 }
-.info-details .title.data-v-13ce01db {
+.background .info-details .title.data-v-13ce01db {
   font-size: 48rpx;
   font-weight: bold;
-  color: #3d3d3d;
+  color: #fff;
 }
-.info-details .labels.data-v-13ce01db {
+.background .info-details .labels.data-v-13ce01db {
   display: flex;
   justify-content: space-between;
 }
-.info-details .labels .label.data-v-13ce01db {
+.background .info-details .labels .label.data-v-13ce01db {
   margin: 0 10rpx 0 0;
   padding: 5rpx 20rpx;
   background-color: #ACBFD5;
   border-radius: 50rpx;
 }
-.info-details .labels .label text.data-v-13ce01db {
+.background .info-details .labels .label text.data-v-13ce01db {
   font-size: 24rpx;
   font-weight: normal;
-  color: #3d3d3d;
+  color: #fff;
 }
-.info-details .special.data-v-13ce01db {
+.background .info-details .special.data-v-13ce01db {
   display: flex;
   justify-content: space-between;
 }
-.info-details .special-item.data-v-13ce01db {
+.background .info-details .special-item.data-v-13ce01db {
   display: flex;
   align-items: center;
 }
-.info-details .special-item text.data-v-13ce01db {
+.background .info-details .special-item text.data-v-13ce01db {
   font-size: 24rpx;
   font-weight: normal;
-  color: #3d3d3d;
+  color: #fff;
 }
-.info-details .status.data-v-13ce01db {
+.background .info-details .status.data-v-13ce01db {
   display: flex;
   justify-content: space-between;
 }
-.info-details .status-item.data-v-13ce01db {
+.background .info-details .status-item.data-v-13ce01db {
   width: 184rpx;
   height: 64rpx;
   background-color: #E6E6E6;
@@ -92,21 +95,23 @@
   align-items: center;
   justify-content: center;
 }
-.info-details .status-item text.data-v-13ce01db {
+.background .info-details .status-item text.data-v-13ce01db {
   margin: 0 0 0 10rpx;
   font-size: 30rpx;
   font-weight: normal;
   color: #3d3d3d;
 }
-.rate.data-v-13ce01db {
+.background .rate.data-v-13ce01db {
   position: relative;
   margin: 30rpx auto 0;
   width: 95%;
-  background-color: #E3EDF9;
+  background-color: #9B9898;
+  border: 1px solid #BBBBBB;
+  border-radius: 40rpx;
   display: flex;
   justify-content: space-between;
 }
-.rate-stars.data-v-13ce01db {
+.background .rate-stars.data-v-13ce01db {
   display: flex;
   width: 300rpx;
   padding: 30rpx 0;
@@ -114,79 +119,76 @@
   align-items: center;
   justify-content: space-between;
 }
-.rate-stars .score.data-v-13ce01db {
+.background .rate-stars .score.data-v-13ce01db {
   font-size: 42rpx;
   font-weight: normal;
   color: #3d3d3d;
 }
-.rate-stars .star.data-v-13ce01db {
+.background .rate-stars .star.data-v-13ce01db {
   display: flex;
   justify-content: space-between;
 }
-.rate-stars .people.data-v-13ce01db {
+.background .rate-stars .people.data-v-13ce01db {
   font-size: 30rpx;
   font-weight: lighter;
-  color: #888888;
+  color: #fff;
 }
-.rate .charts.data-v-13ce01db {
+.background .rate .charts.data-v-13ce01db {
   width: 400rpx;
   height: 300rpx;
 }
-.script.data-v-13ce01db {
+.background .script.data-v-13ce01db {
   position: relative;
   display: flex;
   flex-direction: column;
   margin: 30rpx auto 0;
   width: 95%;
 }
-.script .title.data-v-13ce01db {
+.background .script .title.data-v-13ce01db {
   font-size: 36rpx;
   font-weight: bold;
-  color: #3d3d3d;
+  color: #DD5E5E;
 }
-.script .details.data-v-13ce01db {
+.background .script .details.data-v-13ce01db {
   font-size: 30rpx;
   font-weight: normal;
-  color: #3d3d3d;
+  color: #fff;
 }
-.mission.data-v-13ce01db {
+.background .mission.data-v-13ce01db {
   position: relative;
   display: flex;
   flex-direction: column;
   margin: 30rpx auto 0;
   width: 95%;
 }
-.mission .title.data-v-13ce01db {
+.background .mission .title.data-v-13ce01db {
   font-size: 36rpx;
   font-weight: bold;
-  color: #3d3d3d;
+  color: #DD5E5E;
 }
-.mission view.data-v-13ce01db {
-  margin: 10rpx 0 0 0;
+.background .mission-charactors.data-v-13ce01db {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+.background .mission-charactors .charactor.data-v-13ce01db {
+  margin: 30rpx 0 0 0;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+}
+.background .mission-charactors .charactor-img.data-v-13ce01db {
+  width: 142rpx;
+  height: 146rpx;
+}
+.background .mission-charactors .charactor-identity.data-v-13ce01db {
+  width: 200rpx;
+  display: flex;
   justify-content: center;
 }
-.mission view .mission-imgs.data-v-13ce01db {
-  display: flex;
-  height: 400rpx;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.mission view .mission-imgs .charactor.data-v-13ce01db {
-  width: 146rpx;
-  height: 192rpx;
-}
-.mission view .mission-charactors.data-v-13ce01db {
-  margin: 0 0 0 50rpx;
-  height: 300rpx;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: start;
-}
-.mission view .mission-charactors text.data-v-13ce01db {
-  font-size: 30rpx;
+.background .mission-charactors .charactor-identity text.data-v-13ce01db {
+  font-size: 24rpx;
   font-weight: normal;
-  color: #3d3d3d;
+  color: #fff;
 }
