@@ -1,5 +1,6 @@
 "use strict";
 const common_vendor = require("../../common/vendor.js");
+const common_assets = require("../../common/assets.js");
 if (!Array) {
   const _easycom_tm_carousel2 = common_vendor.resolveComponent("tm-carousel");
   const _easycom_tm_app2 = common_vendor.resolveComponent("tm-app");
@@ -14,10 +15,10 @@ const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
   __name: "pictureSlide",
   setup(__props) {
     const listimg = [
-      "https://picsum.photos/200/300?id=43335",
-      "https://picsum.photos/200/300?id=433",
-      "https://picsum.photos/200/300?id=439",
-      "https://picsum.photos/200/300?id=459"
+      common_assets.lunbotu1,
+      common_assets.lunbotu2,
+      common_assets.lunbotu3,
+      common_assets.lunbotu4
     ];
     return (_ctx, _cache) => {
       return {

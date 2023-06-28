@@ -23,7 +23,7 @@ const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
       {
         item_id: 1,
         item_img: common_assets.tangbomeijing,
-        item_title: "唐博美景",
+        item_title: "塘波美景",
         item_hot: 123,
         item_star: 5
       },
@@ -37,7 +37,7 @@ const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
       {
         item_id: 3,
         item_img: common_assets.jubensha,
-        item_title: "聚本纱",
+        item_title: "剧本杀",
         item_hot: 123,
         item_star: 4
       }

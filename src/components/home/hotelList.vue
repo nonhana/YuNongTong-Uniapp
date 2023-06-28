@@ -32,7 +32,8 @@
 
 <script setup lang="ts">
 import minsu1 from '@/static/img/minsu1.png'
-import minsu2 from '@/static/img/minsu1.png'
+import minsu2 from '@/static/img/minsu2.png'
+import minsu3 from '@/static/img/minsu3.png'
 import more from '../../static/svg/more.svg'
 import getDOM from '@/utils/getDOM'
 import { ref, onMounted } from 'vue'
@@ -55,7 +56,7 @@ const hotelList = ref<hotelListType[]>([
   },
   {
     item_id: 3,
-    item_img: minsu2,
+    item_img: minsu3,
   }
 ])
 

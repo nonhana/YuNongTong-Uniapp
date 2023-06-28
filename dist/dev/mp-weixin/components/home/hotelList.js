@@ -23,7 +23,7 @@ const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
     const hotelList = common_vendor.ref([
       {
         item_id: 1,
-        item_img: common_assets.minsu2
+        item_img: common_assets.minsu1
       },
       {
         item_id: 2,
@@ -31,7 +31,7 @@ const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
       },
       {
         item_id: 3,
-        item_img: common_assets.minsu2
+        item_img: common_assets.minsu3
       }
     ]);
     common_vendor.onMounted(() => {

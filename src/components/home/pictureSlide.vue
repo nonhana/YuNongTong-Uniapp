@@ -5,11 +5,15 @@
 </template>
 
 <script setup lang="ts">
+import lunbotu1 from '@/static/img/lunbotu1.jpg'
+import lunbotu2 from '@/static/img/lunbotu2.jpg'
+import lunbotu3 from '@/static/img/lunbotu3.jpg'
+import lunbotu4 from '@/static/img/lunbotu4.jpg'
 const listimg = [
-  "https://picsum.photos/200/300?id=43335",
-  "https://picsum.photos/200/300?id=433",
-  "https://picsum.photos/200/300?id=439",
-  "https://picsum.photos/200/300?id=459",
+  lunbotu1,
+  lunbotu2,
+  lunbotu3,
+  lunbotu4,
 ]
 </script>
 
